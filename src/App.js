@@ -70,9 +70,9 @@ function App() {
       </div>
 
       <div>
-        <ul>
+        
           {db[selectedGenre].map((book) => (
-            <div style={{
+            <ul style={{
               listStyle: "none",
               padding: "1rem",
               border: "1px solid #D1D5DB",
@@ -84,9 +84,9 @@ function App() {
               <li style={{ fontSize: "larger", textAlign: 'center' }}>{book.name}</li>
               <li style={{ fontSize: "smaller", textAlign: 'center' }}>{book.rating}</li>
               <li style={{ fontSize: "smaller", textAlign: 'center' }}>{book.author}</li>
-            </div>
+            </ul>
           ))}
-        </ul>
+        
 
       </div>
 
